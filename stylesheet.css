@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+    width: 100%;
+    display: block;
+}
+
+#style {
+    width: 100%;
+}
+
+.style-content {
+    display: inline;
+}
+
+.style-content img {
+    max-width: 30vw;
+    max-height: 50vh;
+}
