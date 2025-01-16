@@ -12,11 +12,11 @@ h1 {
     width: 100%;
 }
 
-.style-content {
+.content {
     display: inline;
 }
 
-.style-content img {
+.content img {
     max-width: 30vw;
     max-height: 50vh;
 }
