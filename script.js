@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             const alt = rest.join(" ").replace(/[-_]/g, " ").replace(/\.[^/.]+$/, "");
 
             const targetName = category.concat('-content');
-            const categoryDiv = document.getElementById(category);
+            const categoryDiv = document.getElementById(targetName);
 
             if (targetName) {
                 const imgElement = document.createElement("img");
                 imgElement.src = `${baseFolder}${filename}`;
                 imgElement.alt = alt;
 
-                targetName.appendChild(imgElement);
+                categoryDiv.appendChild(imgElement);
             }
         });
     } catch (error) {
