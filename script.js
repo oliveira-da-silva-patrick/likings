@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             const targetName = category.concat('-content');
             const categoryDiv = document.getElementById(category);
 
-            if (categoryDiv) {
+            if (targetName) {
                 const imgElement = document.createElement("img");
                 imgElement.src = `${baseFolder}${filename}`;
                 imgElement.alt = alt;
 
-                categoryDiv.appendChild(imgElement);
+                targetName.appendChild(imgElement);
             }
         });
     } catch (error) {
