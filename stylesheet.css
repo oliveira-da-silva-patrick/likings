@@ -1,22 +1,19 @@
 html, body {
     padding: 0;
+    background-color: #373737;
 }
 
-h1 {
-    border-bottom: 2px solid black;
-    width: 100%;
-    display: block;
-}
-
-#style {
+.container {
     width: 100%;
 }
 
 .content {
+    width: 100%;
     display: inline;
 }
 
 .content img {
     max-width: 32vw;
     max-height: 50vh;
+    margin: 0.2vh 0.3vw;
 }

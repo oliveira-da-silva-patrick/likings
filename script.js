@@ -1,8 +1,19 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const baseFolder = "pics/";
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
     try {
         const response = await fetch("images.json");
-        const data = await response.json();
+        let data = await response.json();
+
+        data = shuffleArray(data);
 
         data.forEach(item => {
             const { filename, link } = item;
